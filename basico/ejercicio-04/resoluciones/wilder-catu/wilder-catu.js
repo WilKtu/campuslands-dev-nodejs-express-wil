@@ -248,9 +248,7 @@ const servidor = http.createServer(async (req, res) => {
             return;
         }
 
-        // ==========================================
-        // VALIDAR ID PARA PUT Y DELETE
-        // ==========================================
+
 
         if (
             (metodo === "PUT" || metodo === "DELETE") &&
@@ -263,9 +261,6 @@ const servidor = http.createServer(async (req, res) => {
             return;
         }
 
-        // ==========================================
-        // PUT /jugadores/:id
-        // ==========================================
 
         if (metodo === "PUT" && id !== null) {
             const posicion = jugadores.findIndex(
