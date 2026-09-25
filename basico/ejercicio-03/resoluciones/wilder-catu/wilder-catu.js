@@ -232,9 +232,6 @@ const servidor = http.createServer(async (req, res) => {
             return;
         }
 
-        // ==========================================
-        // PUT /equipos/:id
-        // ==========================================
 
         if (metodo === "PUT" && id !== null) {
             const posicion = equipos.findIndex(
@@ -277,9 +274,6 @@ const servidor = http.createServer(async (req, res) => {
             return;
         }
 
-        // ==========================================
-        // DELETE /equipos/:id
-        // ==========================================
 
         if (metodo === "DELETE" && id !== null) {
             const posicion = equipos.findIndex(
